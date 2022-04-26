@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">  
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
@@ -9,7 +12,16 @@
   <title>Etch-A-Sketch</title>
 </head>
 <body>
+  <header>
+    <h1>Etch-A-Sketch</h1>
+  </header>
   <div class="container">
+    <div class="settings-container">
+      <p class="slider-label">16 x 16</p>
+      <input type="range" min="16" max="100" value="16" class="slider" id="myRange">
+      <button type="button" class="clear-button">Clear</button>
+    </div>
+    <div class="grid"></div>
 
   </div>
 </body>
